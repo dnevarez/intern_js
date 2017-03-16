@@ -28,9 +28,13 @@ describe('generateTwitterSocialActivity', () => {
   });
 
   it('should returned undefined if missing id and body text', () => {
+    const activity = generateTwitterSocialActivity({});
+    expect(activity).toEqual(undefined);
   });
 
   it('should match snapshot on valid activity', () => {
+    const activity = generateTwitterSocialActivity(TwitterFixture);
+    expect(activity).toMatchSnapshot();
   });
 
 });
