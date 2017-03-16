@@ -17,7 +17,7 @@ export default function instagramTransformer (message) {
     BodyText: _.get(message, 'caption.text'),
     ID: message.id,
     Network: 'instagram',
-    PostMedia,
+    PostMedia: PostMedia,
     Version: '2.0',
   };
   if (socialActivity.ID && socialActivity.BodyText) {

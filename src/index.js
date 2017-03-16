@@ -1,5 +1,5 @@
-import connect from './connect';
-import InstagramConsumer from './transformers/InstagramConsumer';
+import { connect } from './connect';
+import InstagramConsumer from './consumers/InstagramConsumer';
 
 
 connect().then((channel) => {

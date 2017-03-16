@@ -15,7 +15,7 @@ describe('InstagramConsumer', () => {
     expect(assertQueueMock).toBeCalledWith('goodbye', { durable: true });
   });
 
-  
+
   it('should run consume with consumerQueue name on start', () => {
     const consumeMock = jest.fn();
     const consumer = new InstagramConsumer({
